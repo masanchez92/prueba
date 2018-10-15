@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+  <meta charset="utf-8" />
+  <title>Ingreso Usuarios RH</title>
+<h2>Ingreso de Usuarios RH</h2>
+
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body ng-controller="nuevoIngreso">
+
+        
+<nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Home</a>
+        <a class="navbar-brand" href="Requisition.html">Requisition</a>
+        <a class="navbar-brand" href="firma.html">Firma</a>
+      </nav>
+      
+             
+ <div style="margin-top:50px;">
+
+  <ul>
+      
+      <div class="input-group">
+          
+          <div class="col-md-2">
+            <label>Nombre Completo:</label>
+            <input type="text" name="" id="" class="form-control" >
+          </div>
+      </div>
+      <br>
+          <div class="col-md-2">
+              <label>Departamento:</label>
+              <input type="text" name="" id="" class="form-control">
+          </div>
+          <br>
+         <div  class="col-md-2"> 
+              <label>Fecha de entrada:</label>
+              <input type="date" class="form-control"> 
+            </div>
+            <br>
+          <div class="col-md-2">
+              <label>Puesto:</label>
+              <input type="text" class="form-control">
+          </div>
+        
+
+      <button type="button" ng-click="todomal()" class="btn btn-success"> ver</button>
+</ul>
+<div class="pull-right">
+<form ng-submit="submit()" ng-controller="ExampleController" class="btn btn-suc">
+        <button type="submit" ng-click="submit" value="Submit"  class="btn  btn-primary">Enviar</button> 
+        
+      </form>
+    </div>
+
+
+<script src="bower_components/html5-boilerplate/dist/js/vendor/jquery-1.12.0.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="bower_components/angular/angular.min.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
